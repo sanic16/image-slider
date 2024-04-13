@@ -1,0 +1,52 @@
+.image__modal{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image__modal > div{
+    width: 80%;
+    height: 95%;
+    /* position: relative; */
+    background-color: red;
+}
+
+.image__modal-prev,
+.image__modal-next,
+.image__modal-close
+{
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+.image__modal-next{
+    left: auto;
+    right: 0.5rem;
+}
+
+.image__modal-close{
+    left: auto;
+    top: auto;
+    transform: translateY(0);
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+@media screen and (max-width: 600px){
+    .image__modal{
+        width: 100%;
+        height: 100%;
+    }
+}
